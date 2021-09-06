@@ -12,6 +12,7 @@ namespace testgitdocker.Controllers{
         [HttpGet]
         public ActionResult<IEnumerable<Projects>> GetAllProject()
         {
+            //show all projects
             return Ok(_repository.GetAllProjects());
         }
         [HttpGet("{id}")]
