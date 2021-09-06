@@ -8,7 +8,13 @@ namespace testgitdocker.Controllers{
 [ApiController]
     public class ProjectController:ControllerBase
     {
-        private readonly MockProjects _repository=new MockProjects();
+        private readonly IProjects _repository;
+
+        public ProjectController(IProjects repository)
+        {
+            _repository=repository;
+        }
+        //private readonly MockProjects _repository=new MockProjects();
         [HttpGet]
         public ActionResult<IEnumerable<Projects>> GetAllProject()
         {
