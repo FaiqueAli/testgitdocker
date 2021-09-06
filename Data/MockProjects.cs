@@ -9,9 +9,9 @@ namespace testgitdocker.Data{
         public IEnumerable<Projects> GetAllProjects()
         {
             var ProjectsList = new List<Projects>{
-                new Projects{projectID=1,ProjectName="Java",ProjectDescription="java Project"},
-                new Projects{projectID=2,ProjectName="C# Projects",ProjectDescription="C# Project"},
-                new Projects{projectID=3,ProjectName="Python",ProjectDescription="Python Project"},
+                new Projects{projectID=1,ProjectName="Java",ProjectDescription="java Basic Project"},
+                new Projects{projectID=2,ProjectName="C# Projects",ProjectDescription="C#  orginal Project"},
+                new Projects{projectID=3,ProjectName="Python projects",ProjectDescription="Python sample Project"},
             };
             return ProjectsList;
         }
