@@ -10,8 +10,8 @@ namespace testgitdocker.Data{
         {
             var ProjectsList = new List<Projects>{
                 new Projects{projectID=1,ProjectName="Java",ProjectDescription="java Project"},
-                new Projects{projectID=2,ProjectName="Java",ProjectDescription="java Project"},
-                new Projects{projectID=3,ProjectName="Java",ProjectDescription="java Project"},
+                new Projects{projectID=2,ProjectName="C# Projects",ProjectDescription="C# Project"},
+                new Projects{projectID=3,ProjectName="Python",ProjectDescription="Python Project"},
             };
             return ProjectsList;
         }
